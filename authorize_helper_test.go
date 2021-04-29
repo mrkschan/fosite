@@ -45,6 +45,7 @@ func TestIsLocalhost(t *testing.T) {
 		{expect: true, rawurl: "https://localhost:1234"},
 		{expect: true, rawurl: "https://127.0.0.1:1234"},
 		{expect: true, rawurl: "https://127.0.0.1"},
+		{expect: false, rawurl: "https://127A0A0A1"},
 		{expect: true, rawurl: "https://test.localhost:1234"},
 		{expect: true, rawurl: "https://test.localhost"},
 	} {

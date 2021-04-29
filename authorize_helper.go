@@ -160,7 +160,7 @@ func isMatchingAsLoopback(requested *url.URL, registeredURI string) bool {
 // Check if address is either an IPv4 loopback or an IPv6 loopback-
 // An optional port is ignored
 func isLoopbackAddress(address string) bool {
-	match, _ := regexp.MatchString("^(127.0.0.1|\\[::1\\])(:?)(\\d*)$", address)
+	match, _ := regexp.MatchString("^(127\\.0\\.0\\.1|\\[::1\\])(:?)(\\d*)$", address)
 	return match
 }
 
